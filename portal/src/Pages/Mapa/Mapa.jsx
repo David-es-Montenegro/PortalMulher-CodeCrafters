@@ -4,6 +4,7 @@ import HamburgerMenu from "../../components/Hamburger/Hamburger";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 const Mapa = () => {
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
   const center = {
     lat: -8.03276454056884,
     lng: -34.971299589301054,
@@ -31,6 +32,8 @@ const Mapa = () => {
       console.log("Geolocation is not supported by this browser.");
     }
   }, []);
+
+  console.log(`${API_KEY}`, "env");
 
   return (
     <div className={style.mapContainer}>
