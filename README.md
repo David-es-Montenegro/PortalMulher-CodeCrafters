@@ -1,100 +1,70 @@
-# Portal Mulher
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Este projeto foi desenvolvido durante o **Hackathon Estado de Pernambuco da CPNordeste** com o desafio de centralizar todos os serviços disponíveis para mulheres em Pernambuco em uma única plataforma acessível.
+## Available Scripts
 
+In the project directory, you can run:
 
-## Descrição
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-O Estado de Pernambuco oferece diversos serviços destinados às mulheres, no entanto, a dispersão das informações torna o acesso a esses serviços mais difícil e confuso. Este projeto propõe uma solução que centraliza todas essas informações em uma plataforma única e acessível, facilitando a navegação e o acesso aos serviços por parte das usuárias.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-## Objetivo
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-Desenvolver uma plataforma intuitiva que centralize todos os serviços oferecidos para mulheres em Pernambuco, melhorando a acessibilidade e a eficiência na prestação dos serviços públicos.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Equipe
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-👨‍💻 Desenvolvedores:
-- <a href="https://www.linkedin.com/in/ana-saantos/" target="_blank">Ana Santos</a>
-- <a href="https://www.linkedin.com/in/edcabralc/" target="_blank">Edvaldo Cabral</a>
-- <a href="https://www.linkedin.com/in/david-montenegro-16825b1b5/" target="_blank">David Montenegro</a>
-- <a href="https://www.linkedin.com/in/l%C3%ADvia-gomes-6a5771230/" target="_blank">Lívia Gomes</a>
-- <a href="https://www.linkedin.com/in/yashinadev/" target="_blank">Yashina Maciel</a>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-🎨 **UX Designers:**
-- <a href="https://www.linkedin.com/in/yashinadev/" target="_blank">Yashina Maciel</a>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Tecnologias Utilizadas
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- **React.Js**: Para construção da interface de usuário.
-- **CSS**: Para estilização da aplicação e responsividade.
-- **Vlibras**: Para acessibilidade em Libras.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-## Funcionalidades
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
-- Interface amigável e acessível para navegação.
-- Centralização de serviços como saúde, educação, segurança e direitos das mulheres.
-- Pesquisa rápida de serviços por categorias ou palavras-chave.
-- Informações atualizadas e organizadas de forma clara e objetiva.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
-## Como Executar o Projeto
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
- Clone o repositório:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
-   ```bash
-   git clone https://github.com/David-es-Montenegro/PortalMulher-CodeCrafters.git
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+### `npm run build` fails to minify
 
-
-
-* Navegue até o diretório do projeto:
-
-
-* cd cPortalMulher-CodeCrafters
-
-
-Instale as dependências:
-
-
-* npm install
-
-
-Execute a aplicação:
-
-
-* npm start
-
-
-Acesse a aplicação em seu navegador no endereço http://localhost:3000.
-
-
-## Estrutura de Pastas
-
-
-```bash
-├── public
-├── src
-│   ├── components # Componentes React
-│   ├── pages      # Páginas da aplicação
-│   ├── styles     # Arquivos CSS
-│   └── App.js     # Componente principal
-└── README.md      # Documentação do projeto
-
-
-
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
