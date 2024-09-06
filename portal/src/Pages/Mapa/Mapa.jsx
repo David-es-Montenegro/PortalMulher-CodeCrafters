@@ -1,25 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import style from "./mapa.module.css";
-import HamburgerMenu from '../../components/Hamburger/Hamburger';
+import HamburgerMenu from "../../components/Hamburger/Hamburger";
+import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 const Mapa = () => {
-  const [location, setLocation] = useState(null);
+  const center = {
+    lat: -8.03276454056884,
+    lng: -34.971299589301054,
+  };
+
+  const [location, setLocation] = useState(center);
+
+  const success = (pos) => {
+    const coord = pos.coords;
+
+    setLocation({
+      lat: coord.latitude,
+      lng: coord.longitude,
+    });
+  };
+
+  const errors = (err) => console.warn(`ERROR(${err.code}): ${err.message}`);
+
+  const options = { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 };
 
   useEffect(() => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setLocation({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude
-          });
-        },
-        (error) => {
-          console.error("Error getting geolocation: ", error);
-        }
-      );
+      navigator.geolocation.getCurrentPosition(success, errors, options);
     } else {
-      console.error("Geolocation is not supported by this browser.");
+      console.log("Geolocation is not supported by this browser.");
     }
   }, []);
 
@@ -31,15 +40,15 @@ const Mapa = () => {
       </header>
 
       <div className={style.iframeMap}>
-        <iframe
-          src={`https://7p6dkh2d-5500.brs.devtunnels.ms/?lat=${location?.latitude || ''}&lng=${location?.longitude || ''}`}
-          width="100%"
-          height="600px"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          title="Example"
-        ></iframe>
+        <APIProvider apiKey={API_KEY}>
+          <Map
+            style={{ width: "100vw", height: "600px" }}
+            defaultCenter={location}
+            defaultZoom={10}
+            gestureHandling={"greedy"}
+            disableDefaultUI={true}
+          ></Map>
+        </APIProvider>
       </div>
     </div>
   );
