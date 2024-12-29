@@ -28,6 +28,7 @@ Desenvolver uma plataforma intuitiva que centralize todos os serviços oferecido
 
 
 🎨 **UX Designers:**
+- <a href="https://www.linkedin.com/in/l%C3%ADvia-gomes-6a5771230/" target="_blank">Lívia Gomes</a>
 - <a href="https://www.linkedin.com/in/yashinadev/" target="_blank">Yashina Maciel</a>
 
 
